@@ -1,0 +1,190 @@
+body { 
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #000; /* fundo escuro como base */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* Fundo com gatinhos pretos se abraçando */
+.gatinhos-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.pinimg.com/originals/d9/d6/99/d9d69993a14d003c6a1e9e1d1a9fd0f3.gif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+  opacity: 0.4; /* mais escuro */
+}
+
+.conteudo {
+  position: relative;
+  z-index: 2;
+}
+
+/* Fundo com corações batendo */
+.heart-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://usagif.com/wp-content/uploads/gif-heart-30.gif');
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+  opacity: 0.2;
+}
+
+/* Títulos */
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #ff4d6d;
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 40px;
+  color: #ff6b81;
+}
+
+/* Textos */
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px auto;
+  max-width: 800px;
+  display: block;
+  color: #fff;
+}
+
+/* Imagens */
+.imagem-centralizada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.foto {
+  max-width: 90%;
+  max-height: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(255, 105, 135, 0.8);
+}
+
+/* Quiz e Gincana */
+.quiz-container, .gincana-romantica {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #ff4d6d;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: 0 0 20px #ff4d6d;
+}
+
+.pergunta {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+button, .botao-opcao {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin: 5px;
+}
+
+button:hover, .botao-opcao:hover {
+  background-color: #ff6b81;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #ffb6c1;
+  font-weight: bold;
+}
+
+/* Coração batendo */
+.coracao-batendo {
+  width: 100px;
+  height: 90px;
+  background-color: red;
+  position: relative;
+  margin: 30px auto;
+  transform: rotate(-45deg);
+  animation: pulsar 1s infinite;
+}
+
+.coracao-batendo::before,
+.coracao-batendo::after {
+  content: "";
+  width: 100px;
+  height: 90px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.coracao-batendo::before {
+  top: -50px;
+  left: 0;
+}
+
+.coracao-batendo::after {
+  left: 50px;
+  top: 0;
+}
+
+@keyframes pulsar {
+  0%, 100% {
+    transform: rotate(-45deg) scale(1);
+  }
+  50% {
+    transform: rotate(-45deg) scale(1.1);
+  }
+}
+.roda-do-amor {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #8b0000;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: 0 0 20px #8b0000;
+}
+/* Centralizar e padronizar a Roda do Prazer */
+.roda-do-prazer {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #cc33ff;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: 0 0 20px #cc33ff;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
